@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saidul | Web Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <!-- Logo Image Added Here -->
+    <div class="logo">
+      <img src="saidul-logo.png" alt="Saidul Islam Logo" style="height: 50px;">
+    </div>
+    
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </header>
+
+  <!-- Fullscreen Overlay Menu -->
+  <div class="nav-overlay" id="navOverlay">
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Home Section -->
+ 
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span class="name">Saidul Islam</span></h1>
+      <i class="fas fa-home"></i>
+      <h2><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+      <p>
+        I Create Beautiful, Fast and Responsive Websites using WordPress & HTML, CSS, JavaScript and cling code.
+      </p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>I’m a frontend web developer with a love for clean and responsive design.</p>
+  </section>
+
+  <!-- services Section -->
+ <section class="services" id="services">
+  <h2 class="section-title">My services</h2>
+    <p class="section-subtitle">• What I provide •</p>
+  
+
+  <div class="services-container">
+    <div class="service-box">
+      <i class="fas fa-code service-icon"></i>
+      <h3>Web Development</h3>
+      <p>develop fully responsive and functional websites using HTML, CSS, and JavaScript.
+.</p>
+    </div>
+
+    <div class="service-box">
+      <i class="fas fa-shopping-cart service-icon"></i>
+      <h3>E-commerce Website</h3>
+      <p>I develop functional and secure online stores using WordPress & WooCommerce.
+</p>
+    </div>
+
+    <div class="service-box">
+      <i class="fas fa-mobile-alt service-icon"></i>
+      <h3>Responsive Design</h3>
+      <p>Every website I build looks perfect on mobile, tablet, and desktop devices using flexible layouts.</p>
+    </div>
+
+    <div class="service-box">
+<i class="fa-brands fa-wordpress service-icon"></i>
+      <h3>WordPress Customization</h3>
+      <p>I customize WordPress themes, plugins, and pages using Elementor or any page builder.
+.</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Saidul. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navOverlay = document.getElementById("navOverlay");
+    const navLinks = document.querySelectorAll(".nav-links a");
+    let isMenuOpen = false;
+
+    menuToggle.addEventListener("click", () => {
+      isMenuOpen = !isMenuOpen;
+      navOverlay.classList.toggle("active");
+      menuToggle.innerHTML = isMenuOpen ? "❌" : "&#9776;";
+      //menuToggle.style.fontSize = isMenuOpen ? 
+     //"52px" ; "60px" ;
+     
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navOverlay.classList.remove("active");
+        menuToggle.innerHTML = "&#9776;";
+        isMenuOpen = false;
+      });
+    });
+
+    
+    //tyoen
+    
+    const textArray = ["Saidul Islam", "Web Developer", " A Wordpress Expart ", "& Coder"];
+const typingDelay = 100;
+const erasingDelay = 60;
+const newTextDelay = 1500;
+let textIndex = 0;
+let charIndex = 0;
+
+const typedText = document.querySelector(".typed-text");
+
+function type() {
+  if (charIndex < textArray[textIndex].length) {
+    typedText.textContent += textArray[textIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    typedText.textContent = textArray[textIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    textIndex++;
+    if (textIndex >= textArray.length) textIndex = 0;
+    setTimeout(type, typingDelay + 300);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
+});
+    
+  </script>
+</body>
+</html>
