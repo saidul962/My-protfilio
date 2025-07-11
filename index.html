@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,101 +6,249 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Saidul | Web Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Navbar -->
   <header class="navbar">
-    <!-- Logo Image Added Here -->
     <div class="logo">
-      <img src="saidul-logo.png" alt="Saidul Islam Logo" style="height: 50px;">
+      <img src="logo.png" alt="Saidul Islam Logo" />
     </div>
-    
     <div class="menu-toggle" id="menuToggle">&#9776;</div>
   </header>
 
-  <!-- Fullscreen Overlay Menu -->
+  <!-- Overlay Menu -->
   <div class="nav-overlay" id="navOverlay">
     <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></lli>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
   </div>
 
   <!-- Home Section -->
- 
-  <section class="home" id="home">
+  <section class="home" id="#home">
     <div class="home-content">
-      <h1>Hi, I'm <span class="name">Saidul Islam</span></h1>
-      <i class="fas fa-home"></i>
+     <h1>Hi, I'm <span class="name">Saidul</span> Islam</h1>
       <h2><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
-      <p>
-        I Create Beautiful, Fast and Responsive Websites using WordPress & HTML, CSS, JavaScript and cling code.
-      </p>
-      <a href="#contact" class="btn">Hire Me</a>
+      <p>I Create Beautiful, Fast and Responsive Websites using WordPress, Html, Css, & JavaScript.</p>
+      <a href="#contact" class="btn" style="margin-right: 20px; "><i class="fas fa-envelope"></i> Hire Me</a>
+       <a href="#services" class="btn" style="margin-let: 20px; "> <i class="fas fa-toolbox"></i> Click Me</a>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section about">
+  <section id="about" class="section_about">
     <h2>About Me</h2>
-    <p>I’m a frontend web developer with a love for clean and responsive design.</p>
+    <div class="under_line"></div>
+    <p>Hi, I'm Saidul — a Front-End Web Developer with a strong grip on:
+- HTML5, CSS3, JavaScript
+- WordPress (Custom Themes & Elementor   other Builder using )
+- Responsive Design & UX/UI Principles
+
+I’m constantly learning and love turning complex problems into simple, beautiful, and intuitive designs.  
+If you're looking for a developer who values clean code and great user experience — you're in the right place!</p>
   </section>
-
-  <!-- services Section -->
- <section class="services" id="services">
-  <h2 class="section-title">My services</h2>
-    <p class="section-subtitle">• What I provide •</p>
   
+  <!-- skill setion -->
+  
+  <section class="skills" id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skill_line"></div>
+  <h3 class="section-subtitle">• Profesional Skills •</h3>
+  <p class="section-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+<!--progress bar -->
 
-  <div class="services-container">
-    <div class="service-box">
-      <i class="fas fa-code service-icon"></i>
-      <h3>Web Development</h3>
-      <p>develop fully responsive and functional websites using HTML, CSS, and JavaScript.
-.</p>
+<div class="skill-bars">
+    <div class="skill">
+      <div class="skill-info">
+        <i class="fab fa-wordpress" style="font-size: 22px"></i>
+        <span style="font-size: 26px;">WordPress</span>
+        <span class="percent" style="font-size: 22px;">97%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 97%;"></div>
+      </div>
     </div>
 
-    <div class="service-box">
-      <i class="fas fa-shopping-cart service-icon"></i>
-      <h3>E-commerce Website</h3>
-      <p>I develop functional and secure online stores using WordPress & WooCommerce.
-</p>
+<div class="skill-bars">
+    <div class="skill">
+      <div class="skill-info">
+        <i class="fab fa-wix" style="font-size: 22px;"></i>
+        <span style="font-size: 26px;">Wix</span>
+        <span class="percent" style="font-size: 22px;">60%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 60%;"></div>
+      </div>
     </div>
 
-    <div class="service-box">
-      <i class="fas fa-mobile-alt service-icon"></i>
-      <h3>Responsive Design</h3>
-      <p>Every website I build looks perfect on mobile, tablet, and desktop devices using flexible layouts.</p>
+  <div class="skill-bars">
+    <div class="skill">
+      <div class="skill-info">
+        <i class="fab fa-html5" style="font-size: 22px;"></i>
+        <span style="font-size: 26px;">Html.5</span>
+        <span class="percent" style="font-size: 22px;">95%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 95%;"></div>
+      </div>
     </div>
 
-    <div class="service-box">
-<i class="fa-brands fa-wordpress service-icon"></i>
-      <h3>WordPress Customization</h3>
-      <p>I customize WordPress themes, plugins, and pages using Elementor or any page builder.
-.</p>
+    <div class="skill">
+      <div class="skill-info">
+        <i class="fab fa-css3-alt" style="font-size: 22px;"></i>
+        <span style="font-size: 26px;">Css.3</span>
+        <span class="percent" style="font-size: 22px;">85%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 85%;"></div>
+      </div>
     </div>
+
+    <div class="skill">
+      <div class="skill-info">
+        <i class="fab fa-js-square" style="font-size: 22px;"></i>
+        <span style="font-size: 26px;">JavaScript</span>
+        <span class="percent" style="font-size: 22px;">65%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 65%;"></div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-
-
-  <!-- Contact Section -->
-  <section id="contact" class="section-contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2 class="section-title">My Services</h2>
+    <div class="services_under_line"></div>
+    <p class="section-subtitle">• What I provide •</p>
+    <div class="services-container">
+      <div class="service-box">
+        <i class="fas fa-code service-icon"></i>
+        <h3 class="services-title">Web Development</h3>
+        <p>Develop fully responsive and functional websites using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-shopping-cart service-icon"></i>
+        <h3>E-commerce Website</h3>
+        <p>I develop functional and secure online stores using WordPress & WooCommerce.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-mobile-alt service-icon"></i>
+        <h3>Responsive Design</h3>
+        <p>Every website I build looks perfect on mobile, tablet, and desktop devices.</p>
+      </div>
+      <div class="service-box">
+        <i class="fab fa-wordpress service-icon"></i>
+        <h3>WordPress Customization</h3>
+        <p>I customize themes, plugins, and pages using Elementor or other builders.</p>
+      </div>
+    </div>
   </section>
 
-  <footer>
+  <!-- Contact intro-->
+
+  <div id="#contact" class="cv-container">
+    <div class="cv-header">
+      <h1><i class="fas fa-user"></i> Saidul</h1>
+      <p><i class="fas fa-code"></i> Web Designer & Developer</p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-address-card"></i> Personal Information</h2>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Ayla Bazar, Barguna, Barishal, Bangladesh</li>
+        <li><i class="fas fa-phone"></i> +8801882422962</li>
+         <a href="mailto:mrsaidulislam05@gmail.com" target="_blank" class="cv-gmail"  >
+        <li><i class="fas fa-envelope"></i> mrsaidulislam05@gmail.com</li></a>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-bullseye"></i> Career Objective</h2>
+      <p>
+        <ul>
+        <li>To thrive as a passionate web developer by leveraging my creativity, technical expertise, and problem-solving skills to build visually appealing, fully responsive, and performance-optimized websites that deliver excellent user experiences and meet modern web standards.</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-graduation-cap"></i> Diploma in Computer Science</h2>
+      <ul>
+         <h3><i class="fas fa-school"></i> ABC Polytechnic Institute</h3>
+         <ul>
+           <li>    <p><i class="fas fa-map-marker-alt"></i> <strong style="color: #4C4C4C;">Location:</strong> Barguna</p>
+    <p><i class="fas fa-calendar-alt"></i> <strong  style="color: #4C4C4C">Duration:</strong> 2020 2023</p></li>
+         </ul>
+         <hr>
+         
+    <p style="margin-top: 20px;"><i class="fas fa-book" style="font-size:20px;"></i> <strong style="font-size: 18px;">Key Subjects:</strong> Web Development, Programming <span style="padding-left: 38px; display: block;">in C, Java, Database Management, Computer Networks</span></p>
+    <hr>
+        <p style="margin-top: 20px;"><i class="fas fa-trophy" style="font-size:20px;"></i> <strong style="font-size: 18px;">Achievements:</strong></p>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Completed final project on "Responsive Web <span style="padding-left: 38px; display: block;">Design with HTML, CSS & JavaScript"</span> </li>
+      <li><i class="fas fa-star"></i> Consistently ranked in the top 10% of the <span style="padding-left: 38px; display: block;">class</span> </li>
+      </ul>
+    </div>
+
+
+    <div class="section">
+      <h2><i class="fas fa-language"></i> Languages</h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Bengali (Native)</li>
+        <li><i class="fas fa-check-circle"></i> English – Intermediate (Comfortable in reading, <span style="margin-top: 0px; padding-left: 38px; display: block; ">Writing  & speaking)</span> </li>
+      </ul>
+    </div>
+    <hr>
+    <!-- CV Icon -->
+     <div class="social-icons" style="margin-top: 20px;">
+      <a href="#" target="_blank" class="social-icons" style="color: #1877FF;"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/8801882422962" target="_blank" style="color: #25D366;" >
+  <i class="fab fa-whatsapp"></i></a>
+<a href="https://github.com/yourusername" target="_bstylepp" style="color:#000000;">
+  <i class="fab fa-github"></i> 
+</a>
+    <a href="https://instagram.com/your-profile" target="_blank" class="instagram" style="color: rgba(225, 48, 108, 1)
+;
+    ">
+      <i class="fab fa-instagram"></i>
+    </a>
+          <a href="https://t.me/01882422962" target="_blank" style="color:#0088cc;">
+      <i class="fab fa-telegram-plane"></i>
+    </a>
+    </div>
+  </div>
+  <!-- Contact Form Section -->
+  <section id="contact">
+   <h1>Contact</h1>
+   <div class="contact_under_line"></div>
+   <p style="text-align: center; color: #007BFF;"> • Fast Me •</p>
+    <form action="#">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your Message" required></textarea>
+
+      <button type="submit">SEND</button>
+    </form>
+  </section>
+  <footer class="footer">
     <p>&copy; 2025 Saidul. All Rights Reserved.</p>
   </footer>
 
@@ -114,9 +263,6 @@
       isMenuOpen = !isMenuOpen;
       navOverlay.classList.toggle("active");
       menuToggle.innerHTML = isMenuOpen ? "❌" : "&#9776;";
-      //menuToggle.style.fontSize = isMenuOpen ? 
-     //"52px" ; "60px" ;
-     
     });
 
     navLinks.forEach(link => {
@@ -127,44 +273,36 @@
       });
     });
 
-    
-    //tyoen
-    
-    const textArray = ["Saidul Islam", "Web Developer", " A Wordpress Expart ", "& Coder"];
-const typingDelay = 100;
-const erasingDelay = 60;
-const newTextDelay = 1500;
-let textIndex = 0;
-let charIndex = 0;
+    const textArray = ["Saidul Islam,", "Web Developer,", "WordPress Expert,", "Creative Coder,"];
+    const typedText = document.querySelector(".typed-text");
+    const typingDelay = 100, erasingDelay = 60, newTextDelay = 1500;
+    let textIndex = 0, charIndex = 0;
 
-const typedText = document.querySelector(".typed-text");
+    function type() {
+      if (charIndex < textArray[textIndex].length) {
+        typedText.textContent += textArray[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+      } else {
+        setTimeout(erase, newTextDelay);
+      }
+    }
 
-function type() {
-  if (charIndex < textArray[textIndex].length) {
-    typedText.textContent += textArray[textIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } else {
-    setTimeout(erase, newTextDelay);
-  }
-}
+    function erase() {
+      if (charIndex > 0) {
+        typedText.textContent = textArray[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+      } else {
+        textIndex = (textIndex + 1) % textArray.length;
+        setTimeout(type, typingDelay + 300);
+      }
+    }
 
-function erase() {
-  if (charIndex > 0) {
-    typedText.textContent = textArray[textIndex].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } else {
-    textIndex++;
-    if (textIndex >= textArray.length) textIndex = 0;
-    setTimeout(type, typingDelay + 300);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (textArray.length) setTimeout(type, newTextDelay + 250);
-});
-    
+    document.addEventListener("DOMContentLoaded", () => {
+      if (textArray.length) setTimeout(type, newTextDelay + 250);
+    });
   </script>
+
 </body>
 </html>
